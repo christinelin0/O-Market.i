@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冷藏專區</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/myJS.js"></script>
+</head>
+
+<body>
+    <header class="header">冷藏專區</header>
+    <table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
+<caption></caption>
+<thead>
+	  <tr>
+		<th scope="col" data-label="圖片">圖片</th>
+		<th scope="col" data-label="種類">種類</th>
+		<th scope="col" data-label="營養價值">營養價值</th>
+		<th scope="col" data-label="價格">價格</th>
+		<th scope="col" data-label="數量">數量</th>
+	  </tr>
+</thead>
+<tbody>
+      <tr>
+			<td data-label="圖片"><img src="img/冷藏專區/牛奶.jpeg" alt="" class="item-v"/></td>
+			<td data-label="種類">光泉100純鮮乳(無調整)1857ml</td>
+			<td data-label="營養價值">牛奶中含有較豐富的礦物質，主要包括鈣、磷、鉀、鈉、鐵等。補鈣，可以選擇營養專家推薦的體恆健牌鈣之緣片，純天然碳酸鈣不含鉛等重金屬，鈣源好，含鈣量高，能被人體有效吸收利用.採用鈣加維生素D促進吸收的配方設計，增加骨密度、骨強度效果更明顯，是純凈、安全的鈣製劑,更適合孕婦和兒童。</td>
+			<td data-label="價格">$161</td>
+			<td data-label="數量"><input type="number" min="0" step="1" value="0" class="num" id="itmc1"></td>
+       </tr>
+      <tr>
+            <td data-label="圖片"><img src="img/冷藏專區/豆漿.880x760" alt="" class="item-v"/></td>
+            <td data-label="種類">統一陽光豆漿(無糖)1858ml</td>
+            <td data-label="營養價值">豆漿極富營養和保健價值，富含蛋白質和鈣、磷、鐵、鋅等幾十種礦物質以及維他命A、維他命B等多種維生素。不過因為大量植酸的存在，豆漿中的礦物質無法被吸收利用。另外豆奶中還含有大豆皂甙、異黃酮、卵磷脂等有防癌健腦意義的特殊保健因子。又因為豆漿不含乳糖，對於乳糖不耐症的人士不會產生副作用，也是價廉物美的蛋白質來源。但豆漿的鈣含量較低，一般只有同等劑量牛奶的三十分之一。</td>
+            <td data-label="價格">$58</td>
+            <td data-label="數量"><input type="number" min="0" step="1" value="0" class="num" id="itmc2"></td>
+       </tr>
+      <tr>
+            <td data-label="圖片"><img src="img/冷藏專區/優酪乳.jpeg" alt="" class="item-v"/></td>
+            <td data-label="種類">統一AB無加糖優酪乳517ml</td>
+            <td data-label="營養價值">優酪乳以牛乳為原料，因此仍保有優質奶蛋白質，且受到酵素作用後，在優酪乳中的乳蛋白質變得更為容易消化吸收；也含有豐富的鈣質、磷和鉀等礦物質，幾乎每100公克優酪乳就含有120-140毫克左右的鈣質；同時也有大量的維生素，包含維生素A及維生素B群。</td>
+            <td data-label="價格">$45</td>
+            <td data-label="數量"><input type="number" min="0" step="1" value="0" class="num" id="itmc3"></td>
+       </tr>
+      <tr>
+            <td data-label="圖片"><img src="img/冷藏專區/雞蛋.jpeg" alt="" class="item-v"/></td>
+            <td data-label="種類">木崗高品質雞蛋</td>
+            <td data-label="營養價值">除了蛋白質之外，雞蛋的其他營養幾乎都存在蛋黃中。 蛋黃裡，有膽固醇，也含豐富的卵磷脂、維生素A、D、E，和維生素B 群（特別是B2 和B12）和鐵、鋅等多達10 種的礦物質。 其中，含量極大的卵磷脂則可以活化腦細胞，而有助於提高老年人的記憶力與小孩的學習力。</td>
+            <td data-label="價格">$95</td>
+            <td data-label="數量"><input type="number" min="0" step="1" value="0" class="num" id="itmc4"></td>
+       </tr>
+
+</tbody>
+</table>
+    <div class="total">
+        <span><input type="button" value="總計" onClick="calc()"></span>
+        <span>
+            <p>總計: &nbsp;<lable id="lable-dollars"></lable>元 ;&nbsp;<lable id="lable-g"></lable>項商品</p>
+        </span>
+    </div>
+    <div>
+       <a href="_index.html"><img src="img/images.png" alt="" class="radius total-right-2" /></a>
+    </div>
+    <div>
+        <img style="cursor:pointer" class="total-right" src="img/shoppingcar.jpg" onClick="ccar()" alt="" />
+    </div>
+    <div class="footer">
+        &copy; 2019 <span class="item">O-Market.i!</span>
+    </div>
+</body>
+
+</html>

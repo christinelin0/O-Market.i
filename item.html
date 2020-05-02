@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>產品介紹</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body onload="init()">
+    <div id="dialog" class="dialog">
+        <div id="dialog-header" class="dia-header">優惠活動</div>
+        <div id="dialog-content" class="dia-content">對話框內容</div>
+    </div>
+    <div id="dialog-mask" class="dialog-mask" onclick="closeDialog();"></div>
+	<script src="js/myJS.js"></script>
+    <div class="header"><lable onClick="openDialog('現在...特價中')">O-Market.i !</lable></div>
+    <div class="nav">
+		<span class="item"><a href="_index.html" target="_blank">回到首頁</a></span>
+		<span class="item"><a href="item-vegetable.html" target="_blank">當季蔬菜</a></span>
+		<span class="item"><a href="item-fruit.html" target="_blank">時令水果</a></span>
+		<span class="item"><a href="item-meat.html" target="_blank">肉類專區</a></span>
+        <span class="item"><a href="item-cold.html" target="_blank">冷藏專區</a></span>
+		<span class="item"><a href="item-life.html" target="_blank">生活用品</a></span>
+		<span class="item"><a href="item-mix.html" target="_blank">營養師套餐組合</a></span>
+	</div>
+    <!--
+        處理影像:
+        1. 支援最大 1920 的螢幕寬度(根據市場變化)
+        2. 注意影像檔案的尺寸 (500KB以下)
+        3. 大圖使用 jpg，小圖需要透明背景使用 png
+    -->
+    <div class="visual">
+        限時購物，全館 20% OFF
+    </div><!-- 容器 -->
+    <div class="content">
+        <div class="left">
+            <img class="head" src="img/core.png" alt="" />
+        </div><!-- 項目 -->
+        <div class="right">
+            <div class="title">品牌理念</div>
+            <div class="pall" align="left">
+				現代人的生活日趨忙碌，網路購物及物流業者也逐漸蓬勃發展，我們提供一個網路購物平台，顧客可以在平台上訂購需要的食材和生活用品，減少奔波採買的負擔。
+			</div>
+        </div>
+    </div>  
+    <div class="footer">
+        &copy; 2019 <span class="item">O-Market.i!</span>
+    </div>  
+</body>
+</html>
